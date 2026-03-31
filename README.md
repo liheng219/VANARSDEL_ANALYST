@@ -1,14 +1,14 @@
-## 🖼️ Dashboard Overview
+## Dashboard Overview
 
 
-| Sales Performance | Customer Analytics |
-| :--- | :--- |
-| ![Sales Dashboard](./images/Sale Performance.png) | ![Customer Dashboard](./images/Customers KPI.jpg) |
+
+####  Sales Performance  
+ ![Sales Dashboard](images/Sale Performance.png) 
+ 
+####  Customer Analytics 
+ ![Customer Dashboard](images/Customers KPI.jpg) 
 
 > *Tổng quan hiệu suất doanh thu và phân tích hành vi khách hàng năm 2026.*
-
-
-
 
 
 ### Cảnh báo về Lợi nhuận (Profit Leakage)
