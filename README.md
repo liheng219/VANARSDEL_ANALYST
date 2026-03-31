@@ -3,7 +3,7 @@
 
 | Sales Performance | Customer Analytics |
 | :--- | :--- |
-| ![Sales Dashboard](.Sale Performance.png) | ![Customer Dashboard](.Customers KPI.jpg) |
+| ![Sales Dashboard](./images/Sale Performance.png) | ![Customer Dashboard](./images/Customers KPI.jpg) |
 
 > *Tổng quan hiệu suất doanh thu và phân tích hành vi khách hàng năm 2026.*
 
