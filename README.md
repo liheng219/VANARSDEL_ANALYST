@@ -1,7 +1,5 @@
 ## Dashboard Overview
 
-
-
 ####  Sales Performance  
  ![Sales Dashboard](images/Sale Performance.png) 
  
@@ -20,6 +18,7 @@
 ###  Nhóm khách hàng "Chủ lực" (Champions)
   * Giá trị vượt trội: Nhóm khách hàng trung thành (Champions) chi tiêu trung bình $347/người, cao gấp 3 lần mức trung bình chung ($123).
   * Tập khách hàng vàng: Người trên 55 tuổi chiếm tỉ trọng lớn nhất (gần 25%), cho thấy sản phẩm đang cực kỳ thu hút phân khúc người lớn tuổi có thu nhập ổn định.
+  * Thị trường Trung Quốc có lượng khách lớn nhất, vượt qua Mỹ và Brasil
 ### Vấn đề giữ chân khách hàng (Retention)
   * Tỉ lệ quay lại thấp: Phễu chuyển đổi từ khách mới sang khách hàng trung thành chỉ đạt 16.9%.
   * Nhóm khách Risk (Rủi ro): Trung bình 122 ngày họ chưa quay lại mua hàng. Nếu không có chiến dịch kích cầu ngay, doanh nghiệp sẽ mất trắng nhóm này.
