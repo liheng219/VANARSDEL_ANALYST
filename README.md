@@ -1,75 +1,27 @@
-
-# Retail Sales Performance Dashboard
-
-## Overview
-Dự án phân tích hiệu suất doanh thu bán lẻ của công ty Vanarsdel giai đoạn 2012–2019 nhằm:
-Theo dõi xu hướng tăng trưởng doanh thu
-Đánh giá hiệu suất theo quốc gia và phân khúc
-Phân tích đóng góp doanh thu (Contribution %)
-So sánh doanh thu năm hiện tại với năm trước (YoY Growth)
-Mô phỏng tác động của Sales Discount
-
----
-
-# Dataset
-
-## Tables Used
-
-| Table | Description |
-|-------|------------|
-| Sales | Transaction-level sales data |
-| Product | Product categories & segmentation |
-| Geography | Country and region information |
-| DateDimension | Calendar table for time intelligence (creating from Sales[Date]) |
-
----
-## Key Metrics (DAX)
-RevenueAll = CALCULATE([TotalRevenue], all(Sales))
-
-PreveousYearRevenue = CALCULATE([TotalRevenue], DATEADD(DateDimension[Date], -1, YEAR))
-
-%Growth = DIVIDE([TotalRevenue]-[PreveousYearRevenue],[PreveousYearRevenue])
-
-GTRevenue = DIVIDE([TotalRevenue], [RevenueAll])
-
-## Dashboard Structure
-### Overview Page
-Revenue & Growth by Year
-
-Revenue by Country (Map)
-
-Units by Category
-
-Region & Year slicers
-
-### Performance Page
-
-KPI summary cards
-
-Revenue vs Amount comparison
-
-Sales Discount What-if parameter
-
-### Profit & Contribution Page
-
-Revenue by Category & Segment
-
-Contribution %
-
-Previous Year comparison
-
-## Business Insights
-### Revenue & Growth: 
-Doanh thu tăng trưởng ổn định từ 2012 đến 2019, đạt gần 0.5 tỷ USD vào năm 2019.
-Tuy nhiên, tốc độ tăng trưởng có xu hướng giảm dần theo thời gian (từ ~27% xuống ~7–10%), cho thấy doanh nghiệp đang bước vào giai đoạn bão hòa — quy mô mở rộng nhưng động lực tăng trưởng chậm lại.
-Phân khúc Urban đóng góp khoảng 80% tổng doanh thu, cho thấy sự phụ thuộc lớn vào thị trường đô thị.
-Điều này tạo ra rủi ro nếu thị trường Urban bão hòa hoặc cạnh tranh gia tăng.
-
-### Growth Opportunity Segments:
-Các phân khúc Youth và Mix - Có tốc độ tăng trưởng cao (>24%) nhưng tỷ trọng doanh thu còn thấp (<2%).
-Đây là nhóm tiềm năng để đa dạng hóa nguồn doanh thu
-
-## Full files: 
-[FILE .PBIX, DATASETS](https://drive.google.com/drive/folders/1A5F8P8bjoEcsNYOFlgpkeog6vbh1WyVB)
+## 🖼️ Dashboard Overview
 
 
+| Sales Performance | Customer Analytics |
+| :--- | :--- |
+| ![Sales Dashboard](.Sale Performance.png) | ![Customer Dashboard](.Customers KPI.jpg) |
+
+> *Tổng quan hiệu suất doanh thu và phân tích hành vi khách hàng năm 2026.*
+
+
+
+
+
+### Cảnh báo về Lợi nhuận (Profit Leakage)
+  * Thất thoát lớn: Doanh nghiệp mất tới $140,000 lợi nhuận (chiếm ~25% tổng lợi nhuận gộp) chỉ do Hủy đơn và Trả hàng.
+  * Tỉ lệ trả hàng 10.33%: Đây là con số cao, phản ánh vấn đề về chất lượng sản phẩm hoặc sự sai lệch giữa quảng cáo và thực tế.
+### Sự phụ thuộc "nguy hiểm" vào Search
+  * 70% lưu lượng đến từ Tìm kiếm: Doanh nghiệp đang cực kỳ phụ thuộc vào Google/SEO.
+  * Rủi ro: Các kênh Social (Facebook < 6%) và Organic rất yếu. Nếu thuật toán tìm kiếm thay đổi, doanh thu có thể sụt giảm ngay lập tức.
+###  Nhóm khách hàng "Chủ lực" (Champions)
+  * Giá trị vượt trội: Nhóm khách hàng trung thành (Champions) chi tiêu trung bình $347/người, cao gấp 3 lần mức trung bình chung ($123).
+  * Tập khách hàng vàng: Người trên 55 tuổi chiếm tỉ trọng lớn nhất (gần 25%), cho thấy sản phẩm đang cực kỳ thu hút phân khúc người lớn tuổi có thu nhập ổn định.
+### Vấn đề giữ chân khách hàng (Retention)
+  * Tỉ lệ quay lại thấp: Phễu chuyển đổi từ khách mới sang khách hàng trung thành chỉ đạt 16.9%.
+  * Nhóm khách Risk (Rủi ro): Trung bình 122 ngày họ chưa quay lại mua hàng. Nếu không có chiến dịch kích cầu ngay, doanh nghiệp sẽ mất trắng nhóm này.
+  * Tín hiệu tăng trưởng từ đầu năm
+### Đà tăng mạnh: Doanh thu và lợi nhuận tăng trưởng liên tục từ tháng 1 đến tháng 3 (tháng 3 đạt đỉnh $0.64M). 
